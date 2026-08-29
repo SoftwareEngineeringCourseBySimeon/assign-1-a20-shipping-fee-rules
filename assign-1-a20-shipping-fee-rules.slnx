@@ -2,5 +2,6 @@
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
   </Folder>
-  <Project Path="ShippingFeeRules/Shipping.csproj" Id="18e96fea-8291-432b-a7da-6b62fb098c8d" />
+  <Project Path="ShippingFeeRules/ShippingFeeRules.csproj" Id="18e96fea-8291-432b-a7da-6b62fb098c8d" />
+  <Project Path="UnitTests/UnitTests.csproj" Id="d48ee1fe-3d99-4508-ad1a-80891778b32e" />
 </Solution>
