@@ -21,6 +21,9 @@ Each rule is responsible for determining whether it applies to a shipment and ca
 `ShippingCalculator` receives a collection of `IShippingFeeRule` implementations, finds the **first applicable rule**, and delegates the fee calculation to it. It contains no service-specific conditionals.
 
 The tests verify the existing rules, rule selection, non-applicable rules, unmatched shipments, null handling and that a new test rule can be added without modifying `ShippingCalculator`.
+(for testing just run all tests when you go to tests tab)
+
+Limitations: only one independent rule can be applied at a time (if two rules can apply then the first one will be only considered)
 
 ![Module & Class diagram](ModuleAndClassDiagram.jpeg)
 
