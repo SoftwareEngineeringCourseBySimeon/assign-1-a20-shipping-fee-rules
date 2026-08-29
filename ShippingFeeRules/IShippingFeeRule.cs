@@ -1,4 +1,4 @@
-﻿namespace Shipping;
+﻿namespace ShippingFeeRules;
 
 /// <summary>
 /// Defines a rule for determining whether a shipment qualifies and calculating its shipping fee.

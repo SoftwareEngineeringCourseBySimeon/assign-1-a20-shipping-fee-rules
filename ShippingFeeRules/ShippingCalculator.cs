@@ -1,4 +1,4 @@
-﻿namespace Shipping;
+﻿namespace ShippingFeeRules;
 
 /// <summary>
 /// Calculator that finds the first applicable shipping fee rule and calculates the fee.

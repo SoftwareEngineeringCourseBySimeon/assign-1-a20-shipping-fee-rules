@@ -1,4 +1,4 @@
-﻿namespace Shipping;
+﻿namespace ShippingFeeRules;
 
 /// <summary>
 /// Represents a shipment on which rules are applied and the shipping fee is calculated.

@@ -1,17 +1,17 @@
-﻿namespace Shipping;
+﻿namespace ShippingFeeRules;
 
 /// <summary>
-/// Calculates shipping fees for Express shipments.
+/// Calculates shipping fees for Economy shipments.
 /// </summary>
-public sealed class ExpressShippingFeeRule : IShippingFeeRule
+public sealed class EconomyShippingFeeRule : IShippingFeeRule
 {
-    private const decimal BaseFee = 1000m; // fixed pay
-    private const decimal FeePerKg = 300m; // pay per kg
+    private const decimal BaseFee = 300m; // fixed pay
+    private const decimal FeePerKg = 100m; // pay per kg
 
     public bool AppliesTo(Shipment shipment)
     {
         ArgumentNullException.ThrowIfNull(shipment);
-        return shipment.ServiceLevel == "express";
+        return shipment.ServiceLevel == "economy";
     }
 
     public decimal Calculate(Shipment shipment)
@@ -20,4 +20,3 @@ public sealed class ExpressShippingFeeRule : IShippingFeeRule
         return BaseFee + (shipment.WeightKg * FeePerKg);
     }
 }
-

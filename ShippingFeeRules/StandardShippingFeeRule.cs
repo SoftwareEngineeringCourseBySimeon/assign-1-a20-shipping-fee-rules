@@ -1,4 +1,4 @@
-﻿namespace Shipping;
+﻿namespace ShippingFeeRules;
 
 /// <summary>
 /// Calculates shipping fees for standard shipments.
